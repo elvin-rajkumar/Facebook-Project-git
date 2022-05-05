@@ -12,7 +12,7 @@ const StoryReel = () => {
         />
 
 <Story
-           image="https://www2.shutterstock.com/blog/wp-content/uploads/sites/5/2016/03/fall-trees-road-1.jpg"
+           image="https://content.fortune.com/wp-content/uploads/2017/02/gettyimages-163292239.jpg"
            profileSrc="https://www2.shutterstock.com/blog/wp-content/uploads/sites/5/2016/03/fall-trees-road-1.jpg"
            title="Elvin Rajkumar"
         />

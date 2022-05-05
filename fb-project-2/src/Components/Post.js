@@ -19,9 +19,11 @@ const Post = ({profilePic,imgName,username,message,timestamp}) => {
           <div className='post_topInfo'>
               <h3>{username}</h3>
               <p>{new Date(parseInt(timestamp)).toUTCString()}</p>      
-
+              
           </div>
+          
         </div>
+        <img className='image'  src={imgName} alt="adam_pic"/>
 <div className='post_button'>
     <p>{message}</p>
 

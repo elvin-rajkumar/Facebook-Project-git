@@ -17,6 +17,8 @@
 }
 .post_avatar{
     margin-right: 10px;
+    /* height: 200px;
+    width: 200px; */
 }
 .post_topInfo{
     font-size: medium;
@@ -64,4 +66,10 @@
     justify-content: left;
     padding: 10px 0px 0px 0px;
     overflow: hidden;
+}
+.image{
+    width: 94%;
+    margin: 3%;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
