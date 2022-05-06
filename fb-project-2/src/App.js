@@ -10,10 +10,11 @@ function App() {
    <div className='App'>
       <Header/>
      <div className='app_body'>
-     
+  
     <Sidebar/> 
     <Feed/>
     <Widget/>
+    
    </div>
    </div>
   );

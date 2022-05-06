@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 import SearchIcon from '@mui/icons-material/Search';
 import HomeIcon from '@mui/icons-material/Home';
 import FlagIcon from '@mui/icons-material/Flag';
@@ -17,6 +16,7 @@ import { IconButton } from '@mui/material';
 
 
 import "./Header.css" ;
+import Post from './Post';
 const Header = () => {
   return (
     <div className="header">
@@ -51,7 +51,9 @@ const Header = () => {
             <div className='header_info'>
               {/* <Avatar/> */}
               {/* <Avatar/> */}
-              <Avatar/>
+              
+              <Avatar src="https://content.fortune.com/wp-content/uploads/2017/02/gettyimages-163292239.jpg"/>
+              
               <h4>Joe Adam</h4>
             </div>
             <IconButton>

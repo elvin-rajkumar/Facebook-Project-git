@@ -9,20 +9,26 @@ const Feed = () => {
 
   const [postsData, setPostsData] = useState();
   const post = postsData?.posts?.length > 0 && postsData?.posts[0];
-
+  const commentt =post?.comments?.length > 0 && post?.comments[0];
+  // console.log(comment.text);
+  //const comm = posts?.comments?.length > 0 && posts?.comments[0];
+  // posts is an array, so we are writing the condition to check , 
+  // now we can access the array post = postsData.posts[0] 
+  // ? checks and executes
+  
   const current = ("https://mocki.io/v1/843861b4-722a-4e5e-a088-0cde7e3fdeca");
 
   const getData = (current) => {
     axios.get(current)
       .then((response) => {
         let result = response.data;
-        //console.log(result.user.profile_picture);
-      //  let resposts = result.posts
-        console.log(result.posts.id)
+        
+        // console.log(result.posts.id)
         //   console.log(result);
         //      let adamuser = result.user
         //  let adampic = adamuser.profile_picture;
         setPostsData(result);
+        
       })
       .catch((error) => {
         console.log(error)
@@ -43,7 +49,11 @@ const Feed = () => {
         message="yoo this is a message"
         timestamp={post.posted_on}
         imgName={postsData?.user?.profile_picture}
-        username="Adam "
+        username={postsData?.user?.name}
+        Comment={commentt.text}
+        like = {post.likes}
+        liked_ = {post.liked}
+        
       />
 
       {/* {
@@ -61,4 +71,4 @@ const Feed = () => {
   )
 }
 
-export default Feed
+export default Feed;

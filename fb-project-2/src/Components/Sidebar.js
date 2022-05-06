@@ -16,7 +16,9 @@ const Sidebar = () => {
 
     return (
         <div className='sidebar'>
-            <SidebarRow src="" title="Joe Adam" />
+            <SidebarRow 
+            src="https://content.fortune.com/wp-content/uploads/2017/02/gettyimages-163292239.jpg" 
+            title="Joe Adam" />
             <SidebarRow Icon={LocalHospitalIcon}
                 title='Covid-19 Information Center' />
             <SidebarRow Icon={EmojiFlagsIcon}
